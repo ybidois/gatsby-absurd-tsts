@@ -48,13 +48,19 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Governments can't move quickly enough</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                Let's face it. The global economy is taking a beating from the
+                coronavirus.
+                <br />
+                <br />
+                Governments all around the world are working on stimulus
+                packages to get us out of the crisis.
+                <br />
+                <br />
+                But they are too slow.
               </p>
+              <br />
             </div>
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
@@ -65,23 +71,29 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Learning from the 2008 crisis</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                If we could learn one thing from the 2008 crisis, it is that
+                governments care about 'businesses too big too fail'.
+                <br />
+                <br />
+                There will be stimulus packages for small businesses. They just
+                won't be a great deal.
+                <br />
+                <br />
+                Because the end goal will be to protect the political and
+                financial system, i.e., the big firms and institutions.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>So let's find ideas to save them ourselves</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                Let's create a community who cares about small businesses.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Let's fight back the crisis with our own means and creativity.
               </p>
             </div>
             <Art>
