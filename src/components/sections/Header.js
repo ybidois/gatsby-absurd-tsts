@@ -58,7 +58,7 @@ const Header = () => (
                 <br />
                 <br />
                 They know we can help. <br />
-                <StyledInternalLink href="#faq">
+                <StyledInternalLink to="#share">
                   Tell small businesses about us &nbsp;&#x2794;
                 </StyledInternalLink>
               </p>

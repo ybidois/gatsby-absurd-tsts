@@ -49,7 +49,7 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Governments can't move quickly enough</h2>
+              <h2>Governments can't move quickly</h2>
               <p>
                 Let's face it. The global economy is taking a beating from the
                 coronavirus.
@@ -72,34 +72,34 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Learning from the 2008 crisis</h2>
+              <h2>You are "too small to save"</h2>
               <p>
                 If we could learn one thing from the 2008 crisis, it is that
-                governments care about 'businesses too big too fail'.
+                governments care about businesses "too big to fail".
                 <br />
                 <br />
-                There will be stimulus packages for small businesses. They just
-                won't be a great deal.
+                The end goal of stimulus packages is to protect the political
+                and financial system, i.e., the big firms and institutions.
                 <br />
                 <br />
-                Because the end goal will be to protect the political and
-                financial system, i.e., the big firms and institutions.
+                Government relief has never been a great deal for small business
+                owners. Never before. Not this time.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>
-                Get to know how much cash you have with this free budget
-                template
-              </h2>
+              <h2>So get a clear idea of your cash issues</h2>
               <p>
-                Too many small business owners make this mistake. They have no
-                idea how their cash will evolve in the next few months.
+                Too many founders make this mistake. They have no idea how their
+                cash will evolve in the next few months.
                 <br />
                 <br />
                 With a simple budget, you get a clear view of future cash
-                issues. And you can start working on ideas to solve them.
+                issues.
+                <br />
+                <br />
+                That's why I offer this free and very simple budget template.
                 <br />
                 <br />
                 <br />
@@ -111,6 +111,27 @@ const About = () => (
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Then find ideas to make more cash</h2>
+              <p>
+                I created this community so small business owners around the
+                world can help each other and share business ideas.
+                <br />
+                <br />
+                That's why we offer this free and very simple budget template.
+                <br />
+                <br />
+                <br />
+                <StyledExternalLink href="https://docs.google.com/spreadsheets/d/1VsCYIlaniYQxOtfYIR78yrK55tC0sLR8iqlKnUZIPhA/edit?usp=sharing">
+                  Fill the free budget template
+                </StyledExternalLink>
+              </p>
+            </div>
           </Grid>
         </Container>
       </Section>

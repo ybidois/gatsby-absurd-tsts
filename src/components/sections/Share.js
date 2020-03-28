@@ -10,8 +10,6 @@ import { ReactComponent as FacebookLogo } from '@images/logos/facebook.svg';
 import { ReactComponent as TwitterLogo } from '@images/logos/twitter.svg';
 import { ReactComponent as WhatsAppLogo } from '@images/logos/whatsapp.svg';
 
-import { Helmet } from 'react-helmet';
-
 const LOGOS = [
   {
     logo: WhatsAppLogo,
@@ -52,51 +50,43 @@ const Share = () => (
       }
     `}
     render={data => (
-      <>
-        <Helmet>
-          <script
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          />
-        </Helmet>
-        <Section id="brands" accent>
-          <StyledContainer>
-            <div>
-              <h1>Tell your friends to join</h1>
-              <LogoGrid>
-                {LOGOS.map(
-                  ({
-                    logo,
-                    link,
-                    target,
-                    className,
-                    dataText,
-                    dataUrl,
-                    dataHashtags,
-                    dataRelated,
-                  }) => (
-                    <ExternalLink
-                      key={link}
-                      href={link}
-                      target={target}
-                      className={className}
-                      text={dataText}
-                      url={dataUrl}
-                      hastags={dataHashtags}
-                      related={dataRelated}
-                    >
-                      {logo()}
-                    </ExternalLink>
-                  )
-                )}
-              </LogoGrid>
-            </div>
-            <Art>
-              <Img fluid={data.art_story.childImageSharp.fluid} />
-            </Art>
-          </StyledContainer>
-        </Section>
-      </>
+      <Section id="share" accent>
+        <StyledContainer>
+          <div>
+            <h1>Tell your friends to join</h1>
+            <LogoGrid>
+              {LOGOS.map(
+                ({
+                  logo,
+                  link,
+                  target,
+                  className,
+                  dataText,
+                  dataUrl,
+                  dataHashtags,
+                  dataRelated,
+                }) => (
+                  <ExternalLink
+                    key={link}
+                    href={link}
+                    target={target}
+                    className={className}
+                    text={dataText}
+                    url={dataUrl}
+                    hastags={dataHashtags}
+                    related={dataRelated}
+                  >
+                    {logo()}
+                  </ExternalLink>
+                )
+              )}
+            </LogoGrid>
+          </div>
+          <Art>
+            <Img fluid={data.art_story.childImageSharp.fluid} />
+          </Art>
+        </StyledContainer>
+      </Section>
     )}
   />
 );
