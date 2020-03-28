@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const About = () => (
   <StaticQuery
@@ -88,12 +89,23 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>So let's find ideas to save them ourselves</h2>
+              <h2>
+                Get to know how much cash you have with this free budget
+                template
+              </h2>
               <p>
-                Let's create a community who cares about small businesses.
+                Too many small business owners make this mistake. They have no
+                idea how their cash will evolve in the next few months.
                 <br />
                 <br />
-                Let's fight back the crisis with our own means and creativity.
+                With a simple budget, you get a clear view of future cash
+                issues. And you can start working on ideas to solve them.
+                <br />
+                <br />
+                <br />
+                <StyledExternalLink href="https://docs.google.com/spreadsheets/d/1VsCYIlaniYQxOtfYIR78yrK55tC0sLR8iqlKnUZIPhA/edit?usp=sharing">
+                  Fill the free budget template
+                </StyledExternalLink>
               </p>
             </div>
             <Art>
@@ -149,6 +161,18 @@ const Art = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: white;
+  background-color: #e53a40;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 20px;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
+  }
 `;
 
 export default About;

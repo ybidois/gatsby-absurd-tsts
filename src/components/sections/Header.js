@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
+import { Link } from 'gatsby';
 
 const Header = () => (
   <StaticQuery
@@ -36,12 +37,30 @@ const Header = () => (
                 will kill many
                 <br />
                 small businesses
+                <br />
               </h1>
               <br />
+              <h2>Unless,</h2>
+              <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Let's fight together! &nbsp;&#x2794;
+                They have a clear idea of their cash issues.
+                <br />
+                <StyledExternalLink href="https://docs.google.com/spreadsheets/d/1VsCYIlaniYQxOtfYIR78yrK55tC0sLR8iqlKnUZIPhA/edit?usp=sharing">
+                  Get the free budget template &nbsp;&#x2794;
                 </StyledExternalLink>
+                <br />
+                <br />
+                They find ideas to make more cash.
+                <br />
+                <StyledInternalLink to="Join">
+                  Join the community to share ideas &nbsp;&#x2794;
+                </StyledInternalLink>
+                <br />
+                <br />
+                They know we can help. <br />
+                <StyledInternalLink href="#faq">
+                  Tell small businesses about us &nbsp;&#x2794;
+                </StyledInternalLink>
               </p>
             </Text>
           </Grid>
@@ -93,14 +112,37 @@ const Grid = styled.div`
 const Text = styled.div`
   justify-self: center;
 
+  p {
+    line-height: 1.5em;
+  }
+
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
   }
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+  font-size: 0.9em;
+  color: white;
+  background-color: #e53a40;
   text-decoration: none;
+  border-radius: 8px;
+  padding: 3px;
+  border: solid 1px #e53a40;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
+  }
+`;
+
+const StyledInternalLink = styled(Link)`
+  font-size: 0.9em;
+  color: white;
+  background-color: #e53a40;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 3px;
+  border: solid 1px #e53a40;
 
   &:hover {
     color: ${props => props.theme.color.black.regular};
