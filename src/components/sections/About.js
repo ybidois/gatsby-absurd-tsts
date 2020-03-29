@@ -42,6 +42,17 @@ const About = () => (
             }
           }
         }
+
+        art_glasses: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "glasses" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -72,7 +83,7 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>You are "too small to save"</h2>
+              <h2>Some businesses are "too small to save"</h2>
               <p>
                 If we could learn one thing from the 2008 crisis, it is that
                 governments care about businesses "too big to fail".
@@ -89,13 +100,13 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>So get a clear idea of your cash issues</h2>
+              <h2>SMBs need a clear view of their cash</h2>
               <p>
-                Too many founders make this mistake. They have no idea how their
-                cash will evolve in the next few months.
+                Too many SMBs (small businesses) make this mistake. They have no
+                idea how their cash will evolve in the next few months.
                 <br />
                 <br />
-                With a simple budget, you get a clear view of future cash
+                With a simple budget, they can get a clear view of future cash
                 issues.
                 <br />
                 <br />
@@ -109,7 +120,7 @@ const About = () => (
               </p>
             </div>
             <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+              <Img fluid={data.art_glasses.childImageSharp.fluid} />
             </Art>
           </Grid>
           <Grid inverse>
@@ -119,16 +130,17 @@ const About = () => (
             <div>
               <h2>Then find ideas to make more cash</h2>
               <p>
-                I created this community so small business owners around the
-                world can help each other and share business ideas.
+                I created this community for small business owners to voice out
+                their concerns and find ideas on how they can make more cash.
                 <br />
                 <br />
-                That's why we offer this free and very simple budget template.
+                It is tough to be a small business owner in times of crisis. But
+                you don't have to be alone.
                 <br />
                 <br />
                 <br />
                 <StyledExternalLink href="https://docs.google.com/spreadsheets/d/1VsCYIlaniYQxOtfYIR78yrK55tC0sLR8iqlKnUZIPhA/edit?usp=sharing">
-                  Fill the free budget template
+                  Join the community
                 </StyledExternalLink>
               </p>
             </div>

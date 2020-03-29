@@ -117,7 +117,7 @@ const Text = styled.div`
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    justify-self: start;
+    justify-self: center;
   }
 `;
 
