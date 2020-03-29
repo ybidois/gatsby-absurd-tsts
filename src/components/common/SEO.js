@@ -2,14 +2,15 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'An absurd gatsby starter',
-  title: 'Absurd',
-  url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
-  img: '',
-  twitterId: '@ajayns_',
-  facebookId: '',
+  description:
+    'A community helping small businesses survive the coronavirus crisis',
+  title: 'Too Small to Save?',
+  url: 'https://toosmalltosave.com',
+  author: 'ian',
+  keywords: ['coronavirus', 'crisis', 'small business', 'community', 'cash'],
+  // img: '',
+  // twitterId: '@toosmalltosave',
+  // facebookId: '',
 };
 
 const SEO = () => {

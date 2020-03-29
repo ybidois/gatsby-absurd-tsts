@@ -139,7 +139,7 @@ const About = () => (
                 <br />
                 <br />
                 <br />
-                <StyledExternalLink href="https://docs.google.com/spreadsheets/d/1VsCYIlaniYQxOtfYIR78yrK55tC0sLR8iqlKnUZIPhA/edit?usp=sharing">
+                <StyledExternalLink href="https://toosmalltosave.com/access-form">
                   Join the community
                 </StyledExternalLink>
               </p>

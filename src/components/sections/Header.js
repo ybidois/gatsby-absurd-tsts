@@ -52,10 +52,10 @@ const Header = () => (
                 <br />
                 They find ideas to make more cash.
                 <br />
-                <StyledInternalLink to="Join">
+                <StyledExternalLink href="https://toosmalltosave.com/access-form">
                   Join the community to share ideas &nbsp;&#x2794;
-                </StyledInternalLink>
-                <br />
+                </StyledExternalLink>
+                href <br />
                 <br />
                 They know we can help. <br />
                 <StyledInternalLink to="#share">
