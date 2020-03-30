@@ -41,11 +41,16 @@ const FAQS = [
     title: 'How can we help?',
     content: () => (
       <>
-        I'm looking for a few volunteers to help me manage the community and
-        create online tools to help small businesses. Check the Team section for
-        the volunteering opportunities. {` `}
-        <Link to="#team">Team section here!</Link> And{' '}
-        <Link to="access-form">Volunteer here!</Link>
+        The first thing you can do is to{' '}
+        <Link to="#share">share this website!</Link> {` `} with small businesses
+        or people who might be interested to help. {` `} <br />
+        <br />
+        I'm also looking for a few volunteers to help expand the community.{' '}
+        {` `}
+        <Link to="#team">Check the team section here!</Link> for the
+        volunteering opportunities. {` `}
+        Or you just don't care and {` `}{' '}
+        <Link to="access-form">Volunteer here directly!</Link>
       </>
     ),
   },
