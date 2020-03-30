@@ -2,39 +2,46 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 
 import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
+    name: 'Ian Ismall',
     image: 'josh.jpg',
-    role: 'Founder',
+    role: 'Founder & CFO',
+    link: null,
   },
   {
-    name: 'Lisa Haydon',
+    name: 'Looking for a Volunteer',
     image: 'lisa.jpg',
-    role: 'Art Director',
+    role: 'Community Manager',
+    link: 'access-form',
   },
   {
-    name: 'Ashlyn Harris',
+    name: 'Looking for a Volunteer',
     image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    role: 'Marketing',
+    link: 'access-form',
   },
   {
-    name: 'Todd Joseph',
+    name: 'Looking for a Volunteer',
     image: 'todd.jpg',
     role: 'Designer',
+    link: 'access-form',
   },
   {
-    name: 'Martin White',
+    name: 'Looking for a Volunteer',
     image: 'martin.jpg',
-    role: 'Backend Engineer',
+    role: 'Frontend Dev',
+    link: 'access-form',
   },
   {
-    name: 'Rose Leslie',
+    name: 'Looking for a Volunteer',
     image: 'rose.jpg',
-    role: 'Marketing',
+    role: 'Backend Dev',
+    link: 'access-form',
   },
 ];
 
@@ -71,16 +78,18 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, role, link }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
                 <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
+                  <StyledInternalLink to={link}>
+                    <Img fluid={img.childImageSharp.fluid} alt={name} />
+                    <Title>{name}</Title>
+                    <Subtitle>{role}</Subtitle>
+                  </StyledInternalLink>
                 </div>
               );
             })}
@@ -156,6 +165,15 @@ const Title = styled.p`
 const Subtitle = styled.p`
   ${props => props.theme.font_size.small};
   color: ${props => props.theme.color.black.light};
+`;
+
+const StyledInternalLink = styled(Link)`
+  text-decoration: none;
+
+  &:hover {
+    color: #e53a40;
+    text-decoration: underline;
+  }
 `;
 
 export default Team;

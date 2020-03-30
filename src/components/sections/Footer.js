@@ -54,10 +54,13 @@ const Footer = () => (
             <Copyright>
               <h2>Too Small to Save?</h2>
               <span>
-                Illustrations by
+                Beautiful illustrations from
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
+                </ExternalLink>
+                <ExternalLink href="https://absurd.design">
+                  &nbsp;/ Absurd Design
                 </ExternalLink>
               </span>
             </Copyright>

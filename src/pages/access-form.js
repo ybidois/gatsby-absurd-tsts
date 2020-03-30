@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '@common/Layout';
 import { Container } from '@components/global';
@@ -19,8 +18,6 @@ const SecondPage = () => (
       >
         Loading…
       </iframe>
-      <p>Once you've submitted the form, You can close this page</p>
-      <StyledLink to="/">Or go back to the homepage</StyledLink>
     </StyledContainer>
   </Layout>
 );
@@ -35,17 +32,6 @@ const StyledContainer = styled(Container)`
   p {
     font-size: 1.1em;
   }
-`;
-
-const StyledLink = styled(Link)`
-  color: black;
-  font-size: 1.1em;
-  // text-decoration: none;
-  // border-radius: 8px;
-  // padding: 20px;
-
-  &:hover {
-    color: #8bd8ed;
 `;
 
 export default SecondPage;

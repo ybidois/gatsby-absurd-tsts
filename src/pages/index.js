@@ -6,7 +6,7 @@ import Navbar from '@common/Navbar';
 import Header from '@sections/Header';
 import About from '@sections/About';
 import Share from '@sections/Share';
-import Join from '@sections/Join';
+import Join from '@sections/Team';
 import Faq from '@sections/Faq';
 import Footer from '@sections/Footer';
 

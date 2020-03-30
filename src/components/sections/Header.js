@@ -55,7 +55,7 @@ const Header = () => (
                 <StyledExternalLink href="https://toosmalltosave.com/access-form">
                   Join the community to share ideas &nbsp;&#x2794;
                 </StyledExternalLink>
-                href <br />
+                <br />
                 <br />
                 They know we can help. <br />
                 <StyledInternalLink to="#share">
