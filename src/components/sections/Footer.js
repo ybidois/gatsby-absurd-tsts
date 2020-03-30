@@ -73,7 +73,7 @@ const Footer = () => (
               ))}
             </SocialIcons> */}
             <ContactForm>
-              <StyledLink to="access-form">Contact</StyledLink>
+              <StyledLink to="contact-form">Contact</StyledLink>
             </ContactForm>
           </StyledContainer>
         </FooterWrapper>
